@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI Checker</string>
+    <string name="accessibility_service_description">AI Checker Accessibility Service reads active text input fields to provide real-time AI writing, spelling, and grammar suggestions.</string>
+</resources>
