@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1010410242848",
+    "project_id": "ai-checker-adnan-app",
+    "storage_bucket": "ai-checker-adnan-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010410242848:android:133c5b94d19366984dcd45",
+        "android_client_info": {
+          "package_name": "com.example.ai_checker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBn0NjUuheqrp3M1gSRnPzN5OEq7g4QLfs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

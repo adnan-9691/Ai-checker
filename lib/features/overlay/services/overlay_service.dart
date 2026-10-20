@@ -31,13 +31,13 @@ class OverlayService {
       await FlutterOverlayWindow.showOverlay(
         enableDrag: true,
         overlayTitle: "AI Writing Assistant",
-        overlayContent: "Monitoring text for smart suggestions",
+        overlayContent: "Tap to fix grammar with AI",
         flag: OverlayFlag.defaultFlag,
         alignment: OverlayAlignment.centerRight,
         visibility: NotificationVisibility.visibilityPrivate,
         positionGravity: PositionGravity.auto,
-        width: 160,
-        height: 80,
+        width: 400,
+        height: 160,
       );
 
       _isOverlayOpen = true;

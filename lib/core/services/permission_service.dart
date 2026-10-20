@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/services.dart';
+import 'package:flutter_accessibility_service/flutter_accessibility_service.dart';
 import 'package:flutter_overlay_window/flutter_overlay_window.dart';
 import 'package:permission_handler/permission_handler.dart';
 
@@ -71,6 +72,10 @@ class PermissionService {
   /// Check whether our custom Accessibility Service is enabled in Android settings.
   Future<bool> isAccessibilityServiceEnabled() async {
     try {
+      final pluginEnabled =
+          await FlutterAccessibilityService.isAccessibilityPermissionEnabled();
+      if (pluginEnabled) return true;
+
       final bool? enabled = await _methodChannel
           .invokeMethod<bool>('isAccessibilityServiceEnabled');
       return enabled ?? false;

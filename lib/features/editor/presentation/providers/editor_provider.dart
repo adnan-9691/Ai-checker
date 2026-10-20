@@ -64,7 +64,9 @@ class EditorProvider extends ChangeNotifier {
   /// Toggle user preference for the global floating overlay.
   Future<void> setGlobalOverlayEnabled(bool enabled) async {
     _isGlobalOverlayEnabled = enabled;
-    if (!enabled) {
+    if (enabled) {
+      await _overlayService.showFloatingLogo();
+    } else {
       await _overlayService.hideFloatingLogo();
     }
     notifyListeners();
