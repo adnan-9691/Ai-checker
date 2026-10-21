@@ -17,7 +17,7 @@ class GeminiGrammarService {
             temperature: 0.2,
           ),
           systemInstruction: Content.system(
-            'You are an expert AI grammar, spelling, and phrasing assistant. '
+            ' grammar, spelling, and phrasing assistant. '
             'Analyze the provided text. Correct all spelling errors, grammatical mistakes, '
             'punctuation, and awkward phrasing while preserving the user\'s tone and intended meaning. '
             'Return your response STRICTLY as valid JSON in this schema:\n'
